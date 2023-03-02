@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b1b2ff;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    display: none;
+    width: 4rem;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+@media (min-width: 993px) {
+    .navbar {
+        padding: 1.5rem 4rem;
+    }
+
+    .logo {
+        display: block;
+    }
+}

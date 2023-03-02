@@ -1,0 +1,28 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.menu li{
+    margin-bottom: 2rem;
+}
+.menu a {
+    padding: 1rem 2rem;
+    background-color: #d2daff;
+    border-radius: 1rem;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.menu a:hover{
+    background-color: #81C6E8
+}
+
+.menu a.active{
+    background-color: #81C6E8
+}
+
+.a{
+    color:#000
+}

@@ -1,0 +1,33 @@
+.main {
+    margin: 3rem 0;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}
+
+.star {
+    align-self: flex-start;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center
+}
+
+.star>* {
+    color: red;
+}
+
+@media (min-width: 600px) {
+    .product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .product {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -1,0 +1,18 @@
+.total {
+    padding: 1rem 2rem;
+    background-color: aqua;
+    margin-bottom:1.5rem ;
+}
+
+.total div {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.total button {
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+    background-color: rgb(160, 95, 136)
+}

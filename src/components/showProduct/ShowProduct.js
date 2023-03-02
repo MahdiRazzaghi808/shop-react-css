@@ -1,0 +1,66 @@
+import React, { useContext } from 'react'
+
+import { CartContext } from "../../context/CartContextProvider"
+
+import { rate } from "../../helper/rate"
+
+import { FaStar } from "react-icons/fa";
+import { FaStarHalfAlt } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
+
+import styles from './ShowProduct.module.css'
+import { Link } from 'react-router-dom';
+
+
+
+const ShowProduct = ({ product }) => {
+
+    const name = `${product.title.split(" ")[0]} ${product.title.split(" ")[1]}`
+    let rating = rate(product.rating.rate);
+    
+    let {state,dispatch} = useContext(CartContext)
+
+
+
+    return (
+        <div className={styles.wrapper}>
+
+            <div className={styles.image}>
+                <img src={product.image} alt="popular" />
+            </div>
+
+            <div className={styles.description}>
+                <div>
+                    <h4>{name}</h4>
+                    <p>{product.price}<span>$</span></p>
+                </div>
+
+                <div className={styles.star}>
+                    {
+                        rating[0].map((item, index) => <FaStar key={index} />)
+                    }
+                    {
+                        rating[1] ? <FaStarHalfAlt /> : ""
+
+                    }
+                    {
+                        rating[2].map((item, index) => <FaRegStar key={index} />)
+
+                    }
+                </div>
+
+            </div>
+            <div className={styles.add} >
+                <button onClick={() => dispatch({ type: "ADD_ITEM", payload: product })}>add to cart</button>
+                <Link to={`/product/${product.id}`}>dilate</Link>
+            </div>
+
+
+        </div>
+    )
+
+}
+
+export default ShowProduct
+
+

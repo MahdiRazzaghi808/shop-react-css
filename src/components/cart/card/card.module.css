@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 1rem 1.5rem;
+}
+
+.wrapper img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.wrapper h2{
+    font-size:1rem;
+    width: 6rem;
+}
+
+.wrapper p{
+    width: 4rem;
+    padding:0.25rem 0.5rem;
+    background-color:antiquewhite;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.wrapper span{
+    cursor: pointer;
+}
