@@ -30,7 +30,7 @@ const slideImages = [
     },
 ];
 
-function Home() {
+const Home = () => {
 
     return (
         <div className={styles.wrapper}>

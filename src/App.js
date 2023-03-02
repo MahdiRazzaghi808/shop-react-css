@@ -2,7 +2,7 @@ import React from 'react';
 import ProductContextProvider from './context/ProductContextProvider';
 import CartContextProvider from './context/CartContextProvider';
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 // 
 import Navbar from './components/navbar/Navbar';
@@ -20,12 +20,14 @@ function App() {
         <Navbar />
 
         <Routes>
+
           <Route path='/product/:id' element={<Product />} />
           <Route path="/products/:category" element={<Products />} />
           <Route path="/products" element={<Products />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/" element={<Home />} />
-          <Route path='/*' Navigate={<Home />} />
+          <Route path='/' element={<Home />} />
+
+          <Route path='/*' element={<Navigate to="/" />} />
         </Routes>
 
         <Footer />
