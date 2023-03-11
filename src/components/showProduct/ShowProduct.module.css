@@ -1,6 +1,7 @@
 .wrapper {
-    background-color: #fff;
-    box-shadow: 1px 1px 10px #e1e1e1;
+    background-color: #151e2f;
+    color: #fff;
+    box-shadow: 1px 1px 5px #6291fd;
     border-radius: 1rem;
     width: 100%;
     display: flex;
@@ -55,12 +56,10 @@
 
 .description p {
     font-size: 1.3rem;
-    color: black;
 }
 
 .description p span {
     font-size: 20px;
-    color: black;
 }
 
 
@@ -72,7 +71,7 @@
 }
 
 .star>* {
-    color: red;
+    color: #f9d21f;
 }
 
 .add {
@@ -84,21 +83,21 @@
 }
 
 .add a {
-    color: #000
+    color: #fff;
+    transition: all 0.2s linear;
+}
+.details:hover {
+    color: #6291fd
 }
 
-.add button {
+
+.add .button {
     cursor: pointer;
     border: none;
     padding: 0.75rem 1.5rem;
     border-radius: 0.25rem;
-    background-color: #D2DAFF;
-    color: #101827;
+    color: #fff;
     font-size: 1rem;
     display: flex;
     transition: all 0.2s linear;
-}
-
-.add button:hover {
-    background-color: #a5b5fb;
 }

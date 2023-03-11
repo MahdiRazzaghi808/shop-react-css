@@ -7,6 +7,7 @@
 body {
 	line-height: 1;
 	font-family: sans-serif;
+	background-color: #151e2f;
 }
 
 a {
@@ -41,6 +42,16 @@ input:focus {
 @media (min-width: 456px) {
 	.container {
 		width: 440px;
+	}
+}
+@media (min-width: 568px) {
+	.container {
+		width: 500px;
+	}
+}
+@media (min-width: 672px) {
+	.container {
+		width: 600px;
 	}
 }
 

@@ -3,6 +3,7 @@ import React, { createContext, useEffect, useState } from 'react'
 
 // API
 import { getData } from '../services/getData'
+import { categoriesFunction } from "../helper/categories"
 
 export const ProductsContext = createContext()
 
@@ -14,7 +15,9 @@ const ProductContextProvider = ({ children }) => {
 
         const fetchApi = async () => {
             const fetchData = await getData("/products");
-            setData(fetchData)
+            const products = categoriesFunction(fetchData)
+            products.all = fetchData
+            setData(products)
         }
 
         fetchApi()

@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 2rem;
     margin: 4rem 0;
+    color: #fff;
 }
 
 .image {
@@ -40,14 +41,14 @@
 
 
 .star {
-    align-self: flex-start;
     margin-bottom: 1rem;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
 }
 
 .star div>* {
-    color: red;
+    color: #f9d21f;
 }
 
 .star p {
@@ -59,28 +60,34 @@
 
 .price {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    margin-bottom: 3rem;
+    gap: 1rem;
+
 }
 
 .price p {
     padding: 0.75rem 1.5rem;
-    background-color: #d2daff;
+    background-color: #101827;
+    box-shadow: 1px 1px 5px #6291fd;
     border-radius: 0.25rem;
+    color: #fff;
+
 }
 
 .price div {
     display: flex;
     align-items: center;
     padding: 0.25rem;
-    background-color: #d2daff;
+    background-color: #101827;
     border-radius: 0.2rem;
+    box-shadow: 1px 1px 5px #6291fd;
 
 }
 
 .price div span {
     padding: 0.25rem 0.75rem;
+    color: #fff;
 }
 
 .price div span:first-child {
@@ -94,29 +101,21 @@
 
 
 .showPrice {
-    align-self: center;
+    align-self: flex-start;
     margin-bottom: 2rem;
-    padding: 0.75rem 2rem;
     border-radius: 0.25rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
     cursor: pointer;
 }
 
 .showPrice div {
     padding: 0.75rem 2rem;
     border-radius: 0.25rem;
-    background-color: aquamarine;
+    background-color: #2869ff;
     cursor: pointer;
 }
 
-.showPrice a{
-    padding: 0.75rem 2rem;
-    border-radius: 0.25rem;
-    background-color: aquamarine;
-    color: black;
-}
 
 
 @media (min-width: 768px) {

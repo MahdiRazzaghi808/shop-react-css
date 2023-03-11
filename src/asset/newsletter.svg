@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="36" viewBox="0 0 42 36">
+  <g id="Group_4" data-name="Group 4" transform="translate(-3 -6)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="38" height="19" transform="translate(5 19)" fill="#cfd8dc"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="38" height="4" transform="translate(5 38)" fill="#b0bec5"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="12" height="18" transform="translate(27 24)" fill="#455a64"/>
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="14" height="11" transform="translate(9 24)" fill="#e3f2fd"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="12" height="9" transform="translate(10 25)" fill="#1e88e5"/>
+    <path id="Path_1" data-name="Path 1" d="M36.5,33.5a.472.472,0,0,0-.5.5v2a.5.5,0,0,0,1,0V34A.472.472,0,0,0,36.5,33.5Z" fill="#90a4ae"/>
+    <g id="Group_1" data-name="Group 1">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="3" cy="3" r="3" transform="translate(21 16)" fill="#101827"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="3" cy="3" r="3" transform="translate(33 16)" fill="#101827"/>
+      <circle id="Ellipse_3" data-name="Ellipse 3" cx="3" cy="3" r="3" transform="translate(9 16)" fill="#101827"/>
+    </g>
+    <path id="Path_2" data-name="Path 2" d="M40,6H8A2.006,2.006,0,0,0,6,8v3H42V8A2.006,2.006,0,0,0,40,6Z" fill="#101827"/>
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="6" height="8" transform="translate(21 11)" fill="#101827"/>
+    <path id="Path_3" data-name="Path 3" d="M37,11H32l1,8h6Z" fill="#101827"/>
+    <path id="Path_4" data-name="Path 4" d="M11,11h5l-1,8H9Z" fill="#101827"/>
+    <g id="Group_2" data-name="Group 2">
+      <circle id="Ellipse_4" data-name="Ellipse 4" cx="3" cy="3" r="3" transform="translate(27 16)" fill="#ffa000"/>
+      <path id="Path_5" data-name="Path 5" d="M45,19a3,3,0,1,1-3-3Z" fill="#ffa000"/>
+      <circle id="Ellipse_5" data-name="Ellipse 5" cx="3" cy="3" r="3" transform="translate(15 16)" fill="#ffa000"/>
+      <path id="Path_6" data-name="Path 6" d="M3,19a2.946,2.946,0,0,0,3,3,3,3,0,0,0,0-6Z" fill="#ffa000"/>
+    </g>
+    <g id="Group_3" data-name="Group 3">
+      <path id="Path_7" data-name="Path 7" d="M32,11H27v8h6Z" fill="#ffc107"/>
+      <path id="Path_8" data-name="Path 8" d="M42,11H37l2,8h6Z" fill="#ffc107"/>
+      <path id="Path_9" data-name="Path 9" d="M16,11h5v8H15Z" fill="#ffc107"/>
+      <path id="Path_10" data-name="Path 10" d="M6,11h5L9,19H3Z" fill="#ffc107"/>
+    </g>
+  </g>
+</svg>

@@ -5,6 +5,7 @@
 
 .categories h2 {
     margin-bottom: 1.5rem;
+    color: #fff;
 }
 
 .wrapper {
@@ -12,6 +13,7 @@
     flex-wrap: wrap;
     gap: 1rem;
 }
+
 
 .category {
     width: 100%;
@@ -22,7 +24,7 @@
     margin-bottom: 2rem;
 }
 .category div {
-    width: 300px;
+    width: 250px;
     height: 100px;
     margin-bottom: 1.5rem;
 }
@@ -36,7 +38,7 @@
 
 .category h3 {
     text-align: center;
-    color: #000000;
+    color: #fff;
 }
 
 @media (min-width: 768px) {

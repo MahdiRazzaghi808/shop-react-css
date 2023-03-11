@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 import { FaShoppingCart } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 
@@ -16,24 +16,24 @@ const Div = styled.div`
 
 `
 
-const Menu = ({ open }) => {
+const Menu = ({ open, setOpen }) => {
 
     return (
         <>
             <Div className={styles.wrapper} open={open}>
 
                 <div className={styles.logo}>
-                    <img src={logo} alt="logo" />
+                    <Link to="/" onClick={() => setOpen(false)}><img src={logo} alt="logo" /></Link> 
                 </div>
 
                 <ul className={styles.menu}>
 
                     <li>
-                        <Link to="/" >Home</Link>
+                        <NavLink className={({ isActive }) =>isActive ? styles.active : ""} to="/" onClick={() => setOpen(false)}>Home</NavLink>
                     </li>
 
                     <li>
-                        <Link to="/products">Products</Link>
+                        <NavLink className={({ isActive}) => isActive ? styles.active : ""} to="/products" onClick={() => setOpen(false)}>Products</NavLink>
                     </li>
 
                     <li>
@@ -58,10 +58,10 @@ const Menu = ({ open }) => {
                 </Link>
 
 
-                <Link to="/cart">
+                <NavLink className={({ isActive }) =>isActive ? styles.active : ""} to="/cart">
                     <FaShoppingCart />
                     <span>cart</span>
-                </Link>
+                </NavLink>
 
             </div>
 

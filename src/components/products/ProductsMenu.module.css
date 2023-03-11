@@ -1,28 +1,78 @@
-.menu {
+.wrapper {
+    overflow-x: scroll;
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    height: 7rem;
+    overflow-y: hidden;
 }
-.menu li{
+
+.menu {
+    margin-left: 26rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.menu li {
     margin-bottom: 2rem;
 }
+
 .menu a {
     padding: 1rem 2rem;
-    background-color: #d2daff;
+    background-color: #101827;
+    box-shadow: 1px 1px 5px #6291fd;
+    color: #fff;
     border-radius: 1rem;
     transition: all 0.2s linear;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu a:hover{
-    background-color: #81C6E8
+.menu a:hover {
+    background-color: #d3bb4f
 }
 
-.menu a.active{
-    background-color: #81C6E8
+.menu a.active {
+    background-color: #f9d21f;
+    color: #fff;
+    box-shadow: none;
 }
 
-.a{
-    color:#000
+.a {
+    color: #000
+}
+
+@media (min-width: 456px) {
+    .wrapper{
+        overflow-x: auto;
+        justify-content: center;
+        height: auto;
+
+
+    }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 0;
+
+    }
+
+}
+
+@media (min-width: 992px) {
+    .wrapper{
+        justify-content:flex-start
+    }
+    .menu {
+        justify-content: flex-start;
+        margin-left: 1rem;
+    }
+
 }

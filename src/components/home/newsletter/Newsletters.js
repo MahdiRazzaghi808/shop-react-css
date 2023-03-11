@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Newsletters.module.css'
-import storeImage from '../../../asset/newsletter.png'
+import storeImage from '../../../asset/newsletter.svg'
 import { FaRegPaperPlane } from "react-icons/fa"
 
 const Newsletters = () => {

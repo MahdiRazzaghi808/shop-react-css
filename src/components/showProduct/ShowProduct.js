@@ -17,8 +17,8 @@ const ShowProduct = ({ product }) => {
 
     const name = `${product.title.split(" ")[0]} ${product.title.split(" ")[1]}`
     let rating = rate(product.rating.rate);
-    
-    let {state,dispatch} = useContext(CartContext)
+
+    let { state, dispatch } = useContext(CartContext)
 
 
 
@@ -50,9 +50,15 @@ const ShowProduct = ({ product }) => {
                 </div>
 
             </div>
+
+
             <div className={styles.add} >
-                <button onClick={() => dispatch({ type: "ADD_ITEM", payload: product })}>add to cart</button>
-                <Link to={`/product/${product.id}`}>dilate</Link>
+
+                {
+                    (state.selectedProduct.findIndex(item => item.id === product.id) !== -1) ? <Link to="/cart" className={styles.button} style={{background:"#22c55e"}}>go cart</Link> : <button className={styles.button} onClick={() => dispatch({ type: "ADD_ITEM", payload: product })} style={{background:"#2869ff"}}>add to cart</button>
+
+                }
+                <Link to={`/product/${product.id}`} className={styles.details}>details</Link>
             </div>
 
 

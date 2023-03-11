@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Menu from './Menu'
+import { Link } from 'react-router-dom'
 
 
 import styled from 'styled-components'
@@ -63,15 +64,15 @@ const Navbar = () => {
         <div className={styles.navbar}>
 
             <div className={styles.logo} >
-                <img src={logo} alt="logo" />
+              <Link to="/"> <img src={logo} alt="logo" /></Link> 
             </div>
-            
+
             <Div open={open} onClick={clickHandler}>
                 <div></div>
                 <div></div>
                 <div></div>
             </Div>
-            <Menu open={open} />
+            <Menu open={open} setOpen={setOpen} />
 
 
 

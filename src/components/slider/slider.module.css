@@ -4,22 +4,6 @@
 
 @media (max-width: 1200px){
     .slider{
-        height: 300px
-    }
-}
-@media (max-width: 992px){
-    .slider{
-        height: 250px
-    }
-}
-
-@media (max-width: 756px){
-    .slider{
-        height: 200px
-    }
-}
-@media (max-width: 456px){
-    .slider{
-        height: 150px
+        height: 400px
     }
 }

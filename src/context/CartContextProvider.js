@@ -19,6 +19,7 @@ const cartReducer = (state, action) => {
             }
             return {
                 ...state,
+                checkout:false,
                 selectedProduct: [...state.selectedProduct]
             }
         case "REMOVE_ITEM":

@@ -22,7 +22,6 @@ const Cart = () => {
                         state.selectedProduct.map(item => < Card key={item.id} product={item} />)
                     }
 
-                    {/* {console.log(state)} */}
                 </div>
             </div>
         </div>
