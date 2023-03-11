@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/shop-react-css/static/css/main.d3507b9b.css",
-    "main.js": "/shop-react-css/static/js/main.6f16e7bd.js",
+    "main.css": "/shop-react-css/static/css/main.259ac3f3.css",
+    "main.js": "/shop-react-css/static/js/main.74769788.js",
     "static/media/1.jpeg": "/shop-react-css/static/media/1.36d184ca3143f434d3ee.jpeg",
     "static/media/2.jpg": "/shop-react-css/static/media/2.90ed1dfe63096dfececc.jpg",
+    "static/media/2-sm.jpg": "/shop-react-css/static/media/2-sm.02d10e5c98ea64d3f091.jpg",
+    "static/media/black1.jpg": "/shop-react-css/static/media/black1.8abe99128d2005d6f3b5.jpg",
+    "static/media/black2.jpg": "/shop-react-css/static/media/black2.55ab421c1693141a7afa.jpg",
     "static/media/3.jpg": "/shop-react-css/static/media/3.44ba95a7286ad0b70ab7.jpg",
-    "static/media/newsletter.png": "/shop-react-css/static/media/newsletter.47108560bb77b17c95f4.png",
-    "static/media/black2.jpg": "/shop-react-css/static/media/black2.882a4e087668a2ac6ce3.jpg",
-    "static/media/jewelery.png": "/shop-react-css/static/media/jewelery.c6b4bde5bf3229ef6589.png",
-    "static/media/men's clothing.png": "/shop-react-css/static/media/men's clothing.513635770039090cb90a.png",
-    "static/media/black1.jpg": "/shop-react-css/static/media/black1.3c990782a0537282dff0.jpg",
-    "static/media/logo.svg": "/shop-react-css/static/media/logo.8f4a913cc3c871eceafc1bc0f2c78ce2.svg",
+    "static/media/3-sm.jpg": "/shop-react-css/static/media/3-sm.f8d22017f428b7c27b75.jpg",
+    "static/media/1-sm.jpg": "/shop-react-css/static/media/1-sm.ddab6a826ab4e89dcf15.jpg",
+    "static/media/newsletter.svg": "/shop-react-css/static/media/newsletter.2b2f83552e03e44ec6fe7f771a5ea512.svg",
+    "static/media/men's clothing.svg": "/shop-react-css/static/media/men's clothing.4bbcd2efd59341cfb22ebe215180cf70.svg",
+    "static/media/women's clothing.svg": "/shop-react-css/static/media/women's clothing.7d7daa628b3a311f1dd2162e35eab132.svg",
+    "static/media/logo.svg": "/shop-react-css/static/media/logo.0afefe041ce0506ad6e47342f1f3e929.svg",
+    "static/media/electronics.svg": "/shop-react-css/static/media/electronics.537f419c6d36b10056ab8cc6b2436a5f.svg",
     "index.html": "/shop-react-css/index.html",
-    "main.d3507b9b.css.map": "/shop-react-css/static/css/main.d3507b9b.css.map",
-    "main.6f16e7bd.js.map": "/shop-react-css/static/js/main.6f16e7bd.js.map"
+    "static/media/jewelery.svg": "/shop-react-css/static/media/jewelery.7162f080228ce2722d922666c519b504.svg",
+    "main.259ac3f3.css.map": "/shop-react-css/static/css/main.259ac3f3.css.map",
+    "main.74769788.js.map": "/shop-react-css/static/js/main.74769788.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3507b9b.css",
-    "static/js/main.6f16e7bd.js"
+    "static/css/main.259ac3f3.css",
+    "static/js/main.74769788.js"
   ]
 }
