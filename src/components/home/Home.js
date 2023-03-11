@@ -10,9 +10,9 @@ import Newsletters from './newsletter/Newsletters'
 import image1 from "../../asset/banner/1.jpeg"
 import image2 from "../../asset/banner/2.jpg"
 import image3 from "../../asset/banner/3.jpg"
-import image1Sm from "../../asset/banner/1-sm.jpg"
-import image2Sm from "../../asset/banner/2-sm.jpg"
-import image3Sm from "../../asset/banner/3-sm.jpg"
+import image1Sm from "../../asset/banner/3-sm.jpg"
+import image2Sm from "../../asset/banner/1-sm.jpg"
+import image3Sm from "../../asset/banner/2-sm.jpg"
 
 import image4 from "../../asset/banner2/black1.jpg"
 import image5 from "../../asset/banner2/black2.jpg"
