@@ -1,15 +1,39 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom';
 
+import Swal from 'sweetalert2'
 import styles from './card.module.css'
 import { FaTrashAlt } from "react-icons/fa";
 
 import { CartContext } from "../../../context/CartContextProvider"
 
+
 const Card = ({ product }) => {
+
     const { id, image, title, quantity, price } = product
     const name = `${title.split(" ")[0]} ${title.split(" ")[1]}`
-    const { state, dispatch } = useContext(CartContext)
+
+    const { state, dispatch } = useContext(CartContext);
+
+    const removeProductHandler = (product) => {
+        Swal.fire({
+            title: 'محصول حذف شود؟',
+            showDenyButton: true,
+            confirmButtonText: 'فعلا نه',
+            denyButtonText: `بله`,
+        }).then((result) => {
+            if (result.isDenied) {
+                Swal.fire({
+                    icon: 'info',
+                    text: 'محصول از سبد حذف شد',
+                    confirmButtonText: 'باشه',
+                })
+                dispatch({ type: 'REMOVE_ITEM', payload: product });
+
+            }
+        })
+    }
+
     return (
         <div className={styles.wrapper}>
 
@@ -20,7 +44,7 @@ const Card = ({ product }) => {
                 <p>{(quantity * price).toFixed(2)}$</p>
             </div>
 
-            <span onClick={() => dispatch({ type: 'REMOVE_ITEM', payload: product })}>
+            <span onClick={() => removeProductHandler(product)}>
                 <FaTrashAlt />
             </span>
 

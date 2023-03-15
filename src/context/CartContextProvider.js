@@ -7,8 +7,7 @@ const initialState = {
 }
 
 const cartReducer = (state, action) => {
-    console.log(action);
-    // console.log(state);
+   
     switch (action.type) {
         case "ADD_ITEM":
             if (!state.selectedProduct.find(item => item.id === action.payload.id)) {

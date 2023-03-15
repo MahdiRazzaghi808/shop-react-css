@@ -1,7 +1,6 @@
 {
   "name": "shop",
   "homepage": "https://mahdirazzaghi808.github.io/shop-react-css/",
-
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,6 +15,8 @@
     "react-scripts": "5.0.1",
     "react-slideshow-image": "^4.2.0",
     "styled-components": "^5.3.6",
+    "sweetalert2": "^11.7.3",
+    "sweetalert2-react-content": "^5.0.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

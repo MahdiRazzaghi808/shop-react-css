@@ -77,3 +77,14 @@ input:focus {
 		width: 1300px;
 	}
 }
+
+.swal2-popup{
+	background-color: #151e2f !important;
+	color: #fff !important;
+}
+
+.swal2-confirm{
+	box-shadow: none !important;
+	background-color: #2869ff !important;
+	color: #fff !important;
+}

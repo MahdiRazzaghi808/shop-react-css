@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styles from './ProductsMenu.module.css'
 import { Link, useParams } from 'react-router-dom'
 

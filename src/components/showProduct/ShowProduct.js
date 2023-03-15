@@ -11,7 +11,7 @@ import { FaRegStar } from "react-icons/fa";
 import styles from './ShowProduct.module.css'
 import { Link } from 'react-router-dom';
 
-
+import Swal from 'sweetalert2'
 
 const ShowProduct = ({ product }) => {
 
@@ -20,7 +20,26 @@ const ShowProduct = ({ product }) => {
 
     let { state, dispatch } = useContext(CartContext)
 
+    const addCartHandler = product => {
+        dispatch({ type: "ADD_ITEM", payload: product });
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
 
+        Toast.fire({
+            icon: 'success',
+            title: ':) به سبد خرید اضافه شد'
+        })
+
+    }
 
     return (
         <div className={styles.wrapper}>
@@ -55,7 +74,7 @@ const ShowProduct = ({ product }) => {
             <div className={styles.add} >
 
                 {
-                    (state.selectedProduct.findIndex(item => item.id === product.id) !== -1) ? <Link to="/cart" className={styles.button} style={{background:"#22c55e"}}>go cart</Link> : <button className={styles.button} onClick={() => dispatch({ type: "ADD_ITEM", payload: product })} style={{background:"#2869ff"}}>add to cart</button>
+                    (state.selectedProduct.findIndex(item => item.id === product.id) !== -1) ? <Link to="/cart" className={styles.button} style={{ background: "#22c55e" }}>go cart</Link> : <button className={styles.button} onClick={() => addCartHandler(product)} style={{ background: "#2869ff" }}>add to cart</button>
 
                 }
                 <Link to={`/product/${product.id}`} className={styles.details}>details</Link>

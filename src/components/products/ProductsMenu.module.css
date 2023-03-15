@@ -9,7 +9,7 @@
 }
 
 .menu {
-    margin-left: 26rem;
+    margin-left: 30rem;
     margin-top: 4rem;
     display: flex;
     justify-content: center;
@@ -49,14 +49,33 @@
     color: #000
 }
 
+@media (min-width:320px) {
+    .menu {
+        margin-left: 28rem;
+    }
+}
+
+@media (min-width:360px) {
+    .menu {
+        margin-left: 26rem;
+    }
+}
+
+@media (min-width:400px) {
+    .menu {
+        margin-left: 24rem;
+    }
+}
+
 @media (min-width: 456px) {
-    .wrapper{
+    .wrapper {
         overflow-x: auto;
         justify-content: center;
         height: auto;
 
 
     }
+
     .menu {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -67,9 +86,10 @@
 }
 
 @media (min-width: 992px) {
-    .wrapper{
-        justify-content:flex-start
+    .wrapper {
+        justify-content: flex-start
     }
+
     .menu {
         justify-content: flex-start;
         margin-left: 1rem;
