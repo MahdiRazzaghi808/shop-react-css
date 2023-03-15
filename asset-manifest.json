@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shop-react-css/static/css/main.047e8cfb.css",
-    "main.js": "/shop-react-css/static/js/main.8fb9f13b.js",
+    "main.css": "/shop-react-css/static/css/main.8b6eb9af.css",
+    "main.js": "/shop-react-css/static/js/main.9c257a84.js",
     "static/media/1.jpeg": "/shop-react-css/static/media/1.36d184ca3143f434d3ee.jpeg",
     "static/media/2.jpg": "/shop-react-css/static/media/2.90ed1dfe63096dfececc.jpg",
     "static/media/2-sm.jpg": "/shop-react-css/static/media/2-sm.02d10e5c98ea64d3f091.jpg",
@@ -17,11 +17,11 @@
     "static/media/electronics.svg": "/shop-react-css/static/media/electronics.537f419c6d36b10056ab8cc6b2436a5f.svg",
     "index.html": "/shop-react-css/index.html",
     "static/media/jewelery.svg": "/shop-react-css/static/media/jewelery.7162f080228ce2722d922666c519b504.svg",
-    "main.047e8cfb.css.map": "/shop-react-css/static/css/main.047e8cfb.css.map",
-    "main.8fb9f13b.js.map": "/shop-react-css/static/js/main.8fb9f13b.js.map"
+    "main.8b6eb9af.css.map": "/shop-react-css/static/css/main.8b6eb9af.css.map",
+    "main.9c257a84.js.map": "/shop-react-css/static/js/main.9c257a84.js.map"
   },
   "entrypoints": [
-    "static/css/main.047e8cfb.css",
-    "static/js/main.8fb9f13b.js"
+    "static/css/main.8b6eb9af.css",
+    "static/js/main.9c257a84.js"
   ]
 }
