@@ -15,16 +15,15 @@ function Total() {
         if (state.selectedProduct.length) {
 
             Swal.fire({
-                text: 'همه محصولات حذف شوند؟',
+                text: 'Remove all products?',
                 showDenyButton: true,
-                confirmButtonText: 'فعلا نه',
-                denyButtonText: `بله`,
+                confirmButtonText: 'Not yet',
+                denyButtonText: `Yes`,
             }).then((result) => {
                 if (result.isDenied) {
                     Swal.fire({
                         icon: 'info',
-                        text: 'همه محصولات حذف شدند',
-                        confirmButtonText: 'باشه',
+                        text: 'All products have been removed',
                     })
                     dispatch({ type: 'CLEAR' })
 
@@ -33,9 +32,7 @@ function Total() {
         } else {
             Swal.fire({
                 icon: 'error',
-                text: ':( سبد شما خالی است',
-                confirmButtonText: 'باشه',
-
+                text: 'Your shopping cart is empty :(',
             })
         }
 
@@ -45,17 +42,13 @@ function Total() {
         if (state.selectedProduct.length) {
             Swal.fire({
                 icon: 'success',
-                text: 'پرداخت با موفقیت انجام شد :)',
-                confirmButtonText: 'باشه',
-
+                text: 'Payment was successful :))',
             })
             dispatch({ type: 'CHECKOUT' })
         } else {
             Swal.fire({
                 icon: 'error',
-                text: ':( سبد شما خالی است',
-                confirmButtonText: 'باشه',
-
+                text: 'Your shopping cart is empty :(',
             })
         }
     }

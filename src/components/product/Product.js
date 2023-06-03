@@ -14,6 +14,9 @@ import { FaRegStar } from "react-icons/fa";
 
 import { useParams } from 'react-router-dom';
 
+
+import Swal from 'sweetalert2'
+
 const Product = () => {
     const params = useParams()
     const id = params.id;
@@ -32,11 +35,43 @@ const Product = () => {
     const showPriceHandler = () => {
         dispatch({ type: "ADD_ITEM", payload: product });
         setFlag(true);
+
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        Toast.fire({
+            icon: 'success',
+            title: 'Added to cart :)'
+        })
+
     }
 
     const removeProduct = () => {
-        dispatch({ type: "REMOVE_ITEM", payload: product });
-        setFlag(false);
+        Swal.fire({
+            title: 'Remove the product?',
+            showDenyButton: true,
+            confirmButtonText: 'Not yet',
+            denyButtonText: `Yes`,
+        }).then((result) => {
+            if (result.isDenied) {
+                Swal.fire({
+                    icon: 'info',
+                    text: 'The product was removed from the shopping cart',
+                })
+                dispatch({ type: 'REMOVE_ITEM', payload: product });
+                setFlag(false);
+            }
+        })
+
     }
 
     const quantity = counter(state.selectedProduct, product.id) ? counter(state.selectedProduct, product.id).quantity : 0

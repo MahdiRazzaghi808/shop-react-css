@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ProductContextProvider from './context/ProductContextProvider';
 import CartContextProvider from './context/CartContextProvider';
-
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 
 // 
 import Navbar from './components/navbar/Navbar';
@@ -11,6 +10,7 @@ import Home from './components/home/Home';
 import Products from './components/products/Products';
 import Product from "./components/product/Product"
 import Cart from './components/cart/Cart';
+import ScrollToTop from './helper/ScrollToTop';
 
 
 function App() {
@@ -31,6 +31,9 @@ function App() {
         </Routes>
 
         <Footer />
+
+        <ScrollToTop />
+
       </CartContextProvider>
     </ProductContextProvider>
   )

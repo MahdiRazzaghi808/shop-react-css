@@ -36,7 +36,7 @@ const ShowProduct = ({ product }) => {
 
         Toast.fire({
             icon: 'success',
-            title: ':) به سبد خرید اضافه شد'
+            title: 'Added to cart :)'
         })
 
     }

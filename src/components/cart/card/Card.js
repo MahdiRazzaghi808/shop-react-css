@@ -17,16 +17,15 @@ const Card = ({ product }) => {
 
     const removeProductHandler = (product) => {
         Swal.fire({
-            title: 'محصول حذف شود؟',
+            title: 'Remove the product?',
             showDenyButton: true,
-            confirmButtonText: 'فعلا نه',
-            denyButtonText: `بله`,
+            confirmButtonText: 'Not yet',
+            denyButtonText: `Yes`,
         }).then((result) => {
             if (result.isDenied) {
                 Swal.fire({
                     icon: 'info',
-                    text: 'محصول از سبد حذف شد',
-                    confirmButtonText: 'باشه',
+                    text: 'The product was removed from the shopping cart',
                 })
                 dispatch({ type: 'REMOVE_ITEM', payload: product });
 
