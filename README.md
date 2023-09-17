@@ -1,4 +1,4 @@
-# [Shop (React)]([https://mahdirazzaghi808.github.io/shop-css/](https://shop-react-css.iran.liara.run/))
+# [Shop (React)](https://shop-react-css.iran.liara.run/)
 
 <p align="left">
 <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img
